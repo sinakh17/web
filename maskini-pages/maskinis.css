@@ -1,0 +1,187 @@
+.top-header{
+    background-color: #353535;
+    padding: 30px 0px;
+}
+.nav-item:hover{
+    background-color: #0089e5;
+}
+.myhr{
+    height: 1px;
+    width: 80%;
+}
+.myhr2{
+    height: 1px;
+    width: 30%;
+}
+.myhr3{
+    height: 1px;
+    width: 40%;
+}
+.sblye{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.overlye{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: all ease 0.3s;
+}
+.card:hover .overlye{
+    opacity: 1;
+    visibility: visible;
+}
+.overlye .btn{
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(50%,-50%)scale(0);
+    transition: all ease 0.3s;
+}
+.card:hover .overlye .btn{
+    transform: translate(50%,-50%)scale(1);
+}
+.card:hover small, .card .bg-blue{
+    transition: all ease 0.3s;
+}
+.card:hover small{
+    color: #0099ff !important;
+}
+.card:hover .bg-blue{
+    background-color: #0099ff !important;
+}
+.sblye1{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.overlye1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: all ease 0.3s;
+    background-color: rgba(0, 153, 255, 0.6);
+}
+.card-s:hover .overlye1{
+    opacity: 1;
+    visibility: visible;
+}
+.overlye1 a{
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(50%,-50%)scale(0);
+    transition: all ease 0.3s;
+}
+.card-s:hover .overlye1 a{
+    transform: translate(50%,-50%)scale(1);
+}
+.bg-b a:hover{
+    background-color: #0099ff !important;
+}
+.bg-b a:hover i{
+    color: #fff !important;
+}
+.accordion .btn::before{
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+    top: 22px;
+    left: 15px;
+    font-weight: 900;
+    color: #000;
+}
+.accordion .btn.collapsed::before{
+    content: "\f055";
+}
+.accordion .btn:not(.collapsed)::before{
+    content: "\f056";
+}
+.accordion .btn:focus{
+    outline: none !important;
+    box-shadow: none !important;
+}
+.accordion .btn{
+    margin-left: 10px;
+    color: #000;
+}
+.border-b{
+    border-top: 5px solid #0099ff;
+}
+.border-b .btn{
+    padding: 10px 25px;
+}
+.text-orange{
+    color: #ec6e07;
+}
+.btn-orange{
+    background-color: #ec6e07;
+    color: #fff;
+}
+@media  screen and (max-width:960px){
+    .res{
+        left: 0px !important;
+    }
+}
+.sblye2{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.overlye2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: all ease 0.3s;
+    background: rgba(0, 0, 0, 0.6);
+}
+.card-s:hover .overlye2{
+    opacity: 1;
+    visibility: visible;
+}
+.overlye2 .des{
+    position: absolute;
+    top: 50%;
+    left: -25%;
+    transform: translate(50%,-50%)scale(0);
+    transition: all ease 0.3s;
+}
+.overlye2 .view{
+    position: absolute;
+    top: 95%;
+    left: -19%;
+    transform: translate(50%,-50%)scale(0);
+    transition: all ease 0.3s;
+}
+.overlye2 .search{
+    position: absolute;
+    top: 87%;
+    left: 55%;
+    transform: translate(50%,-50%)scale(0);
+    transition: all ease 0.3s;
+}
+
+.card-s:hover .overlye2 .des{
+    transform: translate(50%,-50%)scale(1);
+}
+.card-s:hover .overlye2 .view{
+    transform: translate(50%,-50%)scale(1);
+}
+.card-s:hover .overlye2 .search{
+    transform: translate(50%,-50%)scale(1);
+}
+.b-dash{
+    border-top: 1px dashed #000;
+}
